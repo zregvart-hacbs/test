@@ -33,13 +33,13 @@ spec:
       - name: git-url
         value: https://github.com/devfile-samples/devfile-sample-go-basic.git
       - name: output-image
-        value: quay.io/redhat-appstudio/user-workload:demo2-devfile-sample-go-basic-component-$(tt.params.git-revision)
+        value: quay.io/redhat-appstudio/user-workload:demo2-devfile-sample-go-basic-component2-$(tt.params.git-revision)
       - name: dockerfile
         value: docker/Dockerfile
       - name: path-context
         value: .
       pipelineRef:
-        bundle: quay.io/zregvart_redhat/build-templates-bundle:2022-09-27-154335
+        bundle: quay.io/redhat-appstudio/build-templates-bundle:devel
         name: docker-build
       workspaces:
       - name: workspace

@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-component
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:demo2-devfile-sample-go-basic-component
+      - image: quay.io/redhat-appstudio/user-workload:demo2-devfile-sample-go-basic-component2
         imagePullPolicy: Always
         name: container-image
         resources: {}
